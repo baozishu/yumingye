@@ -1,379 +1,182 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+    <html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>狗头军师 - 多少惆怅，不如一曲!</title>
-  <link rel="stylesheet" href="/main.css">
-  <link rel="icon" type="image/x-icon" href="/img/icon.webp">
-  <link rel="apple-touch-icon" href="/img/icon.webp">
-  <meta name="apple-mobile-web-app-title" content="狗头军师">
-  <link rel="bookmark" href="/img/icon.webp">
-  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="/img/icon.webp">
-  <meta name="description" content="寻找更贴近直觉的路径和方向，并用行动去突破，去改变，去创造。">
-  <meta name="theme-color" content="#1C1C1F">
-  <link rel="stylesheet" href="https://cdn3.codesign.qq.com/icons/X2bzpZvRWkZkAaV/latest/iconfont.css">
-  <script src="https://lf9-cdn-tos.bytecdntp.com/cdn/expire-1-M/jquery/3.6.0/jquery.min.js"></script>
+        <!--========== BOX ICONS ==========-->
+        <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+        
+        <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
 
-</head>
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
 
-<body id="body">
-  <div class="nav">
-    <div class="nav-content">
-      <div class="nav-left">
-        <a href="javascript:scrollToTopWithAnimation()" class="site-logo">
-          <img src="/img/icon.webp" alt="logo" class="site-logo-img">
-          <span class="site-name">包子叔</span>
+        <title>Domain Name - Π·Site</title>
+    </head>
+    <body>
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
         </a>
-      </div>
-      <div class="nav-center">
-        <a href="javascript:heoWeb.scrollTo('站点');" class="nav-item">站点</a>
-        <a href="javascript:heoWeb.scrollTo('域名');" class="nav-item">域名</a>
-		
-      </div>
-      <div class="nav-right">
-        <a href="https://ono.ee/" class="nav-item" target="_blank">博客</a>
-        <a class="nav-menu" id="nav-menu"><span class="heofont icon-menu-fill"></span></a>
-      </div>
-    </div>
-  </div>
-  <div class="menu-list" id="menu-list">
-    <a href="https://ono.ee/" class="nav-item" target="_blank">博客</a>
-    <a href="javascript:heoWeb.scrollTo('站点');" class="nav-item">站点</a>
-    <a href="javascript:heoWeb.scrollTo('域名');" class="nav-item">域名</a>
+        
+        <!--========== HEADER ==========-->
+        <header class="l-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">Π·Site</a>
 
-  </div>
-  <div class="nav-banner">
-    <a class="nav-banner-text" target="_blank">ioio.run 欢迎大家询个价  <span
-        class="heofont icon-arrow-right-s-line" style="font-size: 16px;"></span></a>
-  </div> 
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">首页</a></li>
+                        <li class="nav__item"><a href="#Contact" class="nav__link">联系</a></li>
+                        <li class="nav__item"><a href="#Exhibition" class="nav__link">展示</a></li>
+                        <li class="nav__item"><a href="#Sales" class="nav__link">售卖</a></li>
 
-  <div class="first-stack need-padding">
-    <div class="left-Introduce">
-      <div class="title-group">
-        <span class="title">How many sorrows，</span>
-      </div>
-      <div class="discription">
-	  <span class="discription-text"><span class="inline-word">不如一曲。</span></span>
-      </div>
-      <div class="first-stack-links">
-        <a href="https://ono.ee/" class="about-button" target="_blank">访问博客</a>
-        <a href="https://github.com/baozishu" class="about-button social-button" target="_blank">
-          <i class="heofont icon-github-line"></i>
-        </a>
-        <a href="https://131.gs" class="about-button social-button" target="_blank">
-          <i class="heofont icon-dribbble-line"></i>
-        </a>
-      </div>
-      
-    </div>
-    <a href="https://blog.zhheo.com/about/" class="right-stack" target="_blank">
-      <img class="banner-img" src="/img/狗头.webp" alt="banner" title="banner">
-    </a>
-  </div>
+                        <li><i class='bx bx-toggle-left change-theme' id="theme-button"></i></li>
+                    </ul>
+                </div>
 
-<!-- Blog banner -->
-  <div class="product-banner" style="background-image: linear-gradient(180deg, #0F6AC1 0%, #002EA0 100%);">
-    <div class="banner-info need-padding">
-	<span class="tips">站点</span>
-      <span class="title">新奇的事物<span class="punctuation">，</span><br>有趣的思想<span class="punctuation">。</span></span>
-      
-    </div>
-    <div class="banner-pic">
-      <img class="banner-pic-img" src="/img/353ee.webp" alt="banner image">
-    </div>
-  </div>
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-grid-alt'></i>
+                </div>
+            </nav>
+        </header>
 
-  <div class="product-group need-padding" id="站点">
-    <h2 class="group-title">站点</h2>
-    <span class="group-description">自己的站点，消息记录者</span>
-    <div class="group-items">
+        <main class="l-main">
+            <!--========== 首页 ==========-->
+            <section class="home" id="home">
+                <div class="home__container bd-container bd-grid">
+                    <div class="home__img">
+                        <img src="assets/img/sy.gif" alt="">
+                    </div>
 
-      <!-- 狗头军师 -->
-      <div class="group-item">
-        <a class="group-item-icon" href="https://ono.ee/" target="_blank">
-          <img class="group-item-icon-img" src="/img/onoee.webp" alt="product-icon" title="product-icon">
-        </a>
-        <div class="group-info-group">
-          <div class="group-info">
-            <a class="title" href="https://ono.ee/" target="_blank">狗头军师<sup class="hot">热</sup></a>
-            <a class="discription" href="https://ono.ee/" target="_blank">包子叔的个人日常</a>
-          </div>
-          <div class="group-info-button">
-		  <a class="linkbutton" href="https://ono.ee/" target="_blank">访问</a>
-          </div>
-        </div>
-      </div>
+                    <div class="home__data">
+                        <h3 class="home__title">Domain Name</h3>
+                        <p class="home__description">每个人都有一个独特的名字，而网站域名则是这个名字的网络地址，它是唯一也是独一</p>
+                        <a href="#Sales" class="button">购买</a>
+                    </div>   
+                </div>
+            </section>
 
-      <!-- 聚·分享 -->
-      <div class="group-item">
-        <a class="group-item-icon" href="https://xn--fz0a.online/" target="_blank">
-		<img class="group-item-icon-img" src="/img/聚分享.webp" alt="product-icon" title="product-icon">
-        </a>
-        <div class="group-info-group">
-          <div class="group-info">
-            <a class="title" href="https://xn--fz0a.online/" target="_blank">聚·分享<sup class="hot">热</sup></a>
-            <a class="discription" href="https://xn--fz0a.online/" target="_blank">分享有趣的工具，汇聚精彩</a>
-          </div>
-          <div class="group-info-button">
-            <a class="linkbutton" href="https://xn--fz0a.online/" target="_blank">访问</a>
-          </div>
-        </div>
-      </div>
+            <!--========== 联系 ==========-->
+            <section class="share section bd-container" id="Contact">
+                <div class="share__container bd-grid">
+                    <div class="share__data">
+                        <h2 class="section-title-center">Contact Me</h2>
+                        <p class="share__description">挑选域名→联系卖家→支付费用→过户域名→完成交易🤝</p>
+                        <a href="#Contact" class="button">微信：MyBaoZiShu</a>
+                    </div>
+                    <div class="share__img">
+                        <img src="assets/img/联系.png" alt="">
+                    </div>
+                </div>
+            </section>
 
-      <!-- 站·Top -->
-      <div class="group-item">
-        <a class="group-item-icon" href="https://xn--5tz.top/" target="_blank">
-          <img class="group-item-icon-img" src="/img/站Top.webp" alt="product-icon" title="product-icon">
-        </a>
-        <div class="group-info-group">
-          <div class="group-info">
-		  <a class="title" href="https://xn--5tz.top/" target="_blank">站·Top<sup class="new">新上线</sup></a>
-            <a class="discription" href="https://xn--5tz.top/" target="_blank">建站社区，小白的天堂</a>
-          </div>
-          <div class="group-info-button">
-            <a class="linkbutton" href="https://xn--5tz.top/" target="_blank">查看</a>
-          </div>
-        </div>
-      </div>
+            <!--========== 展示 ==========-->
+            <section class="decoration section bd-container" id="Exhibition">
+                <h2 class="section-title">独特且唯一呈现，让你流连忘返<br> Exhibition</h2>
+                <div class="decoration__container bd-grid">
+                    <div class="decoration__data">
+                        <img src="assets/img/tep.png" alt="" class="decoration__img">
+                        <h3 class="decoration__title">Tep·Pet</h3>
+                        <a href="#Exhibition" class="button button-link">收藏</a>
+                    </div>
 
+                    <div class="decoration__data">
+                        <img src="assets/img/Π.site.png" alt="" class="decoration__img">
+                        <h3 class="decoration__title">Π·Site</h3>
+                        <a href="#Exhibition" class="button button-link">收藏</a>
+                    </div>
 
-    </div>
-  </div>
+                    <div class="decoration__data">
+                        <img src="assets/img/Π.team.png" alt="" class="decoration__img">
+                        <h3 class="decoration__title">Π·Team</h3>
+                        <a href="#Exhibition" class="button button-link">收藏</a>
+                    </div>
+
+                    <div class="decoration__data">
+                        <img src="assets/img/errorcode.team.png" alt="" class="decoration__img">
+                        <h3 class="decoration__title">ErrorCode·Team</h3>
+                        <a href="#Exhibition" class="button button-link">收藏</a>
+                    </div>
+
+                </div>
+            </section>
+
+            <!--========== 售卖 ==========-->
+            <section class="accessory section bd-container" id="Sales">
+                <h2 class="section-title">基本不赚钱，交个朋友 <br> Sales</h2>
+
+                <div class="accessory__container bd-grid">
+                    <div class="accessory__content">
+                        <img src="assets/img/zai.li.png" alt="" class="accessory__img">
+                        <h3 class="accessory__title">Zai.Li</h3>
+                        <span class="accessory__category">在·哩</span>
+                        <span class="accessory__preci">¥350</span>
+                        <a href="#" class="button accessory__button"><i class='bx bx-shopping-bag'></i></a>
+                    </div>
+
+                    <div class="accessory__content">
+                        <img src="assets/img/131.gs.png" alt="" class="accessory__img">
+                        <h3 class="accessory__title">131.Gs</h3>
+                        <span class="accessory__category">131公司</span>
+                        <span class="accessory__preci">¥100</span>
+                        <a href="#" class="button accessory__button"><i class='bx bx-shopping-bag'></i></a>
+                    </div>
+
+                    <div class="accessory__content">
+                        <img src="assets/img/353.ee.png" alt="" class="accessory__img">
+                        <h3 class="accessory__title">353.ee</h3>
+                        <span class="accessory__category">数字好记</span>
+                        <span class="accessory__preci">¥300</span>
+                        <a href="#" class="button accessory__button"><i class='bx bx-shopping-bag'></i></a>
+                    </div>
 
 
-
-  <!-- 域名 -->
-  <div class="product-banner" style="background-image: linear-gradient(180deg, #830FC1 0%, #3D00A0 100%);">
-    <div class="banner-info need-padding">
-	<span class="tips">域名</span>
-      <span class="title">一段新故事<span class="punctuation">，</span><br>在这也可能是起点<span class="punctuation">。</span></span>
-    </div>
-    <div class="banner-pic">
-	<img class="banner-pic-img" src="/img/域名.webp" alt="banner image">
-    </div>
-  </div>
+                </div>
+            </section>
 
 
+        </main>
 
-  <div class="product-group need-padding" id="域名">
-    <h2 class="group-title">西部数码</h2>
-    <div class="group-items">
+        <!--========== 页脚 ==========-->
+        <footer class="footer section">
+            <div class="footer__container bd-container bd-grid">
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        <a href="#" class="footer__logo">Π·Site</a>
+                    </h3>
+                    <p class="footer__description">不只是域名，更是一份情怀</p>
+                </div>
 
-      <!-- 131.GS -->
-      <div class="group-item">
-        <a class="group-item-icon" target="_blank">
-          <img class="group-item-icon-img" src="/img/131.webp" alt="product-icon" title="product-icon">
-        </a>
-        <div class="group-info-group">
-          <div class="group-info">
-            <a class="title" target="_blank">131.GS</a>
-            <a class="discription" target="_blank">西部数码</a>
-          </div>
-          <div class="group-info-button">
-            <a class="linkbutton" target="_blank">购买</a>
-          </div>
-        </div>
-      </div>
-	        <!-- 聚.ONLINE -->
-      <div class="group-item">
-        <a class="group-item-icon" target="_blank">
-          <img class="group-item-icon-img" src="/img/聚.webp" alt="product-icon" title="product-icon">
-        </a>
-        <div class="group-info-group">
-          <div class="group-info">
-            <a class="title" target="_blank">聚.ONLINE</a>
-            <a class="discription" target="_blank">西部数码</a>
-          </div>
-          <div class="group-info-button">
-            <a class="linkbutton" target="_blank">收藏</a>
-          </div>
-        </div>
-      </div>
-            <!-- TEP.PET -->
-      <div class="group-item">
-        <a class="group-item-icon" target="_blank">
-          <img class="group-item-icon-img" src="/img/loliba.webp" alt="product-icon" title="product-icon">
-        </a>
-        <div class="group-info-group">
-          <div class="group-info">
-            <a class="title" target="_blank">TEP.PET</a>
-            <a class="discription" target="_blank">西部数码</a>
-          </div>
-          <div class="group-info-button">
-            <a class="linkbutton" target="_blank">收藏</a>
-          </div>
-        </div>
-      </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">已售</h3>
+                    <ul>
+                        <li>Acm.ee</li>
+                    </ul>
+                </div>
 
-    </div>
-  </div>
-	  
-	  
-    </div>
-  </div>
+                <div class="footer__content">
+                    <h3 class="footer__title">更多</h3>
+                    <ul>
+                        <li><a href="https://ono.ee" class="footer__link">Blog</a></li>
 
-	  <div class="product-group need-padding" id="腾讯云">
-    <h2 class="group-title">腾讯云</h2>
-    <div class="group-items">
+                    </ul>
+                </div>
 
-	        <!-- 站.TOP -->
-      <div class="group-item">
-        <a class="group-item-icon" target="_blank">
-          <img class="group-item-icon-img" src="/img/站.webp" alt="product-icon" title="product-icon">
-        </a>
-        <div class="group-info-group">
-          <div class="group-info">
-            <a class="title" target="_blank">站.TOP</a>
-            <a class="discription" target="_blank">腾讯</a>
-          </div>
-          <div class="group-info-button">
-            <a class="linkbutton" target="_blank">收藏</a>
-          </div>
-        </div>
-      </div>
-	        <!-- 177157.XYZ -->
-      <div class="group-item">
-        <a class="group-item-icon" target="_blank">
-          <img class="group-item-icon-img" src="/img/177157.webp" alt="product-icon" title="product-icon">
-        </a>
-        <div class="group-info-group">
-          <div class="group-info">
-            <a class="title" target="_blank">177157.XYZ</a>
-            <a class="discription" target="_blank">腾讯</a>
-          </div>
-          <div class="group-info-button">
-            <a class="linkbutton" target="_blank">收藏</a>
-          </div>
-        </div>
-      </div>
-	        <!-- 175753.XYZ -->
-      <div class="group-item">
-        <a class="group-item-icon" target="_blank">
-          <img class="group-item-icon-img" src="/img/175753.webp" alt="product-icon" title="product-icon">
-        </a>
-        <div class="group-info-group">
-          <div class="group-info">
-            <a class="title" target="_blank">175753.XYZ</a>
-            <a class="discription" target="_blank">腾讯</a>
-          </div>
-          <div class="group-info-button">
-            <a class="linkbutton" target="_blank">收藏</a>
-          </div>
-        </div>
-      </div>	  
+                <div class="footer__content">
+                    <h3 class="footer__title">联系</h3>
+                    <a href="#Contact" class="footer__social"><svg t="1724386270961" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4510" width="32" height="32"><path d="M240.614842 555.026836L177.138969 725.069926l176.106842-61.798665zM461.232204 595.795893c0 92.375457 86.053673 167.204737 192.233841 167.204737s192.233842-74.829281 192.233842-167.204737-86.053673-167.204737-192.233842-167.204738-192.233842 74.829281-192.233841 167.204738z m51.864432 0c0-67.475369 62.959808-122.307169 140.498425-122.307169s140.498425 54.702784 140.498425 122.307169-62.959808 122.307169-140.498425 122.307169-140.498425-54.702784-140.498425-122.307169z" fill="" p-id="4511"></path><path d="M534.642308 595.795893a118.823737 103.470833 0 1 0 237.647474 0 118.823737 103.470833 0 1 0-237.647474 0Z" fill="#335883" p-id="4512"></path><path d="M466.52186 639.145269c-2.967368 0.129016-6.063752 0.258032-9.160136 0.258032-101.664609 0-184.105833-71.732897-184.105834-160.237873s82.441225-160.237873 184.105834-160.237874c81.925161 0 151.335769 46.574776 175.203729 110.953761 6.4508-0.64508 13.030616-0.774096 19.610432-0.774096 18.06224 0 35.4794 2.193272 51.993449 6.192768-23.351896-99.987401-125.016505-175.332745-246.936626-175.332745-139.079249 0-251.96825 98.052161-251.96825 219.198186 0 121.017009 112.759985 219.198186 251.96825 219.198185 13.675696 0 27.09336-1.032128 40.382008-2.838352-14.062744-16.643064-24.771072-35.737432-31.092856-56.379992z" fill="" p-id="4513"></path><path d="M442.782915 580.055941c0-80.505985 65.411113-147.723321 152.754946-163.59229-26.061232-43.22036-78.054681-72.636009-138.047121-72.636008-86.053673 0-155.722313 60.63752-155.722314 135.466801 0 71.732897 64.120953 130.435177 145.143001 135.208769-2.709336-11.224392-4.128512-22.706816-4.128512-34.447272z" fill="#335883" p-id="4514"></path><path d="M785.707446 663.013229l60.121457 100.116417-118.694721-18.449288z" fill="" p-id="4515"></path><path d="M382.403427 389.112259c-9.418168 6.579816-20.513544 15.739952-29.286632 32.641048-8.644072 16.901096-11.998488 30.060728-7.09588 36.640545 4.902608 6.579816 6.579816-18.70732 21.416656-35.221369 14.83684-16.385032 19.739448-19.481416 29.67368-25.932216 10.063248-6.321784-5.289656-14.707824-14.707824-8.128008z" fill="#FFFFFF" p-id="4516"></path></svg></a>
 
-    </div>
-  </div>
-	  	  
-    </div>
-  </div>
-  
-	  <div class="product-group need-padding" id="趣域">
-	  <h2 class="group-title">趣域</h2>
-    <div class="group-items">
+                </div>
+            </div>
 
-	        <!-- ONO.EE -->
-      <div class="group-item">
-        <a class="group-item-icon" target="_blank">
-          <img class="group-item-icon-img" src="/img/ono.webp" alt="product-icon" title="product-icon">
-        </a>
-        <div class="group-info-group">
-          <div class="group-info">
-            <a class="title" target="_blank">ONO.EE</a>
-            <a class="discription" target="_blank">趣域</a>
-          </div>
-          <div class="group-info-button">
-            <a class="linkbutton" target="_blank">收藏</a>
-          </div>
-        </div>
-      </div>
-	        <!-- 353.EE -->
-      <div class="group-item">
-        <a class="group-item-icon" target="_blank">
-          <img class="group-item-icon-img" src="/img/353.webp" alt="product-icon" title="product-icon">
-        </a>
-        <div class="group-info-group">
-          <div class="group-info">
-            <a class="title" target="_blank">353.EE</a>
-            <a class="discription" target="_blank">趣域</a>
-          </div>
-          <div class="group-info-button">
-            <a class="linkbutton" target="_blank">收藏</a>
-          </div>
-        </div>
-      </div>
-	        <!-- ZAI.LI -->
-      <div class="group-item">
-        <a class="group-item-icon" target="_blank">
-          <img class="group-item-icon-img" src="/img/TEPPET.webp" alt="product-icon" title="product-icon">
-        </a>
-        <div class="group-info-group">
-          <div class="group-info">
-            <a class="title" target="_blank">ZAI.LI</a>
-            <a class="discription" target="_blank">趣域</a>
-          </div>
-          <div class="group-info-button">
-            <a class="linkbutton" target="_blank">收藏</a>
-          </div>
-        </div>
-      </div>
+        </footer>
 
-    </div>
-  </div>
-	  
-	  
-    </div>
-  </div>
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-
-	  <div class="product-group need-padding" id="阿里云">
-    <h2 class="group-title">阿里云</h2>
-    <div class="group-items">
-
-      <!-- IOIO.RUN -->
-      <div class="group-item">
-        <a class="group-item-icon" target="_blank">
-          <img class="group-item-icon-img" src="/img/ioio.webp" alt="product-icon" title="product-icon">
-        </a>
-        <div class="group-info-group">
-          <div class="group-info">
-            <a class="title" target="_blank">IOIO.RUN</a>
-            <a class="discription" target="_blank">阿里云</a>
-          </div>
-          <div class="group-info-button">
-            <a class="linkbutton" target="_blank">购买</a>
-          </div>
-        </div>
-      </div>
-	        <!-- WOZAI.CC -->
-      <div class="group-item">
-        <a class="group-item-icon" target="_blank">
-          <img class="group-item-icon-img" src="/img/wozai.webp" alt="product-icon" title="product-icon">
-        </a>
-        <div class="group-info-group">
-          <div class="group-info">
-            <a class="title" target="_blank">WOZAI.CC</a>
-            <a class="discription" target="_blank">阿里云</a>
-          </div>
-          <div class="group-info-button">
-            <a class="linkbutton" target="_blank">收藏</a>
-          </div>
-        </div>
-      </div>
-	  
-    </div>
-  </div>
-	  
-	  
-    </div>
-  </div>
-  
-</body>
-
-<script src="/js/simpleParallax.min.js"></script>
-<script src="/js/main.js"></script>
-
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>

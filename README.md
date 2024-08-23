@@ -1,6 +1,6 @@
 # yumingye
 
-![](/img/yumingye.webp)
+![](/PixPin_2024-08-23_12-39-03.png)
 
 ## 修改
 
